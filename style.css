@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  background-color:rgb(243, 109, 20);
+  background-image: url(https://thumbs.dreamstime.com/z/orange-fruit-fresh-cutting-slicing-image-background-52381569.jpg?w=992);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main {
+  color: black;
+  background-color:rgb(233, 189, 47);
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  border: 2px solid rgba(255, 255, 255,.2);
+  padding: 30px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  padding: 0.5vw;
+  margin: 0.5vw;
+}
+input {
+  margin: 0.5vw;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  padding: 10px 45px 10px 15px;
+}
+input::placeholder {
+
+  color: grey
+
+}
+textarea {
+  color: grey;
+  margin-left: 28px;
+  border: 1px solid grey;
+}
+textarea::placeholder {
+  color: grey;
+  font-size: 15px;
+  padding: 10px;
+}
+#pincode{
+  margin-left: 30px;
+}
+.submit-btn {
+  color: white;
+}
+
+.table {
+  color: black;
+  width: 60vw;
+}
+
+.table thead th {
+  color: black;
+  border: 2px solid black;
+}
+
+.table tbody td {
+  border: 2px solid black;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .table {
+    width: 100%;
+  }
+
+  .table thead th,
+  .table tbody td {
+    display: block; 
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: left;
+  }
+  #state-label{
+    margin-left: 50px;
+  }
+  #country{
+    margin-left: 50px;
+
+  }
+}
